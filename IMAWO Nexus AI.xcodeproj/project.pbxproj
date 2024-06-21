@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A941F8BB2C2587E7003BC719 /* AnalysisSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A941F8BA2C2587E7003BC719 /* AnalysisSection.swift */; };
+		A941F8BD2C25891B003BC719 /* AnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A941F8BC2C25891B003BC719 /* AnimationsView.swift */; };
+		A9702A722C23172000C74652 /* OpenAIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9702A712C23172000C74652 /* OpenAIError.swift */; };
+		A9702A752C23183D00C74652 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9702A742C23183D00C74652 /* APIService.swift */; };
+		A9FDC0EF2C25768500A87ED5 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FDC0EE2C25768500A87ED5 /* SideBarView.swift */; };
+		A9FDC0F12C25771F00A87ED5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FDC0F02C25771F00A87ED5 /* DetailView.swift */; };
+		A9FDC0F72C257BBA00A87ED5 /* FileImportSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FDC0F62C257BBA00A87ED5 /* FileImportSection.swift */; };
+		A9FDC0F92C257BD600A87ED5 /* FilePlaybackSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FDC0F82C257BD600A87ED5 /* FilePlaybackSection.swift */; };
+		A9FDC0FB2C257BF800A87ED5 /* TranscriptionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FDC0FA2C257BF800A87ED5 /* TranscriptionSection.swift */; };
+		AA51970C5819634E500BB836 /* Pods_IMAWO_Nexus_AI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBDF20FAEBFD07EDB72281C /* Pods_IMAWO_Nexus_AI.framework */; };
+		E31BC03A2ADFB0770055F065 /* OpenAIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31BC0392ADFB0770055F065 /* OpenAIViewModel.swift */; };
+		E3499BA12AD8003800D26BC2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3499BA02AD8003800D26BC2 /* Response.swift */; };
+		E3499BA42AD8069A00D26BC2 /* AnalyzedTextCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3499BA32AD8069A00D26BC2 /* AnalyzedTextCache.swift */; };
+		E350830B2AD98B9700001805 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E350830A2AD98B9700001805 /* Utilities.swift */; };
+		E36BCEB52ACE790A00762025 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BCEB42ACE790A00762025 /* PersistenceController.swift */; };
+		E372A6D02AD945DA0032705E /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372A6CF2AD945DA0032705E /* Tips.swift */; };
+		E37F98432AD0188900618AEF /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37F98422AD0188900618AEF /* APIResponse.swift */; };
+		E3CF9EA92ACD95F500CA8E19 /* IMAWO_Nexus_AIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CF9EA82ACD95F500CA8E19 /* IMAWO_Nexus_AIApp.swift */; };
+		E3CF9EAB2ACD95F500CA8E19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CF9EAA2ACD95F500CA8E19 /* ContentView.swift */; };
+		E3CF9EAD2ACD95F700CA8E19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CF9EAC2ACD95F700CA8E19 /* Assets.xcassets */; };
+		E3CF9EB02ACD95F700CA8E19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CF9EAF2ACD95F700CA8E19 /* Preview Assets.xcassets */; };
+		E3CF9EB52ACD95F700CA8E19 /* IMAWO_Nexus_AI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3CF9EB32ACD95F700CA8E19 /* IMAWO_Nexus_AI.xcdatamodeld */; };
+		E3CF9ECC2ACD972800CA8E19 /* ApiKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CF9ECB2ACD972800CA8E19 /* ApiKeysView.swift */; };
+		E3CF9ECF2ACD9A0D00CA8E19 /* Whisper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CF9ECE2ACD9A0D00CA8E19 /* Whisper.swift */; };
+		E3CF9ED52ACD9BFE00CA8E19 /* ApiKeys+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CF9ED32ACD9BFE00CA8E19 /* ApiKeys+CoreDataClass.swift */; };
+		E3CF9ED62ACD9BFE00CA8E19 /* ApiKeys+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CF9ED42ACD9BFE00CA8E19 /* ApiKeys+CoreDataProperties.swift */; };
+		E3D905922AD3DA8D00F20C0A /* AnalyzedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D905912AD3DA8D00F20C0A /* AnalyzedTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60EB3C177628C58897F1F1DF /* Pods-IMAWO Nexus AI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMAWO Nexus AI.release.xcconfig"; path = "Target Support Files/Pods-IMAWO Nexus AI/Pods-IMAWO Nexus AI.release.xcconfig"; sourceTree = "<group>"; };
+		A941F8BA2C2587E7003BC719 /* AnalysisSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisSection.swift; sourceTree = "<group>"; };
+		A941F8BC2C25891B003BC719 /* AnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsView.swift; sourceTree = "<group>"; };
+		A9702A712C23172000C74652 /* OpenAIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIError.swift; sourceTree = "<group>"; };
+		A9702A742C23183D00C74652 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A9FDC0EE2C25768500A87ED5 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
+		A9FDC0F02C25771F00A87ED5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A9FDC0F62C257BBA00A87ED5 /* FileImportSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportSection.swift; sourceTree = "<group>"; };
+		A9FDC0F82C257BD600A87ED5 /* FilePlaybackSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePlaybackSection.swift; sourceTree = "<group>"; };
+		A9FDC0FA2C257BF800A87ED5 /* TranscriptionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionSection.swift; sourceTree = "<group>"; };
+		AEB47A6FFA9822B5BB8D852B /* Pods-IMAWO Nexus AI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMAWO Nexus AI.debug.xcconfig"; path = "Target Support Files/Pods-IMAWO Nexus AI/Pods-IMAWO Nexus AI.debug.xcconfig"; sourceTree = "<group>"; };
+		E31BC0392ADFB0770055F065 /* OpenAIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIViewModel.swift; sourceTree = "<group>"; };
+		E3499BA02AD8003800D26BC2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E3499BA32AD8069A00D26BC2 /* AnalyzedTextCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzedTextCache.swift; sourceTree = "<group>"; };
+		E350830A2AD98B9700001805 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E36BCEB42ACE790A00762025 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		E372A6CF2AD945DA0032705E /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		E37F98422AD0188900618AEF /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		E3CF9EA52ACD95F500CA8E19 /* IMAWO Nexus AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMAWO Nexus AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3CF9EA82ACD95F500CA8E19 /* IMAWO_Nexus_AIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMAWO_Nexus_AIApp.swift; sourceTree = "<group>"; };
+		E3CF9EAA2ACD95F500CA8E19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E3CF9EAC2ACD95F700CA8E19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3CF9EAF2ACD95F700CA8E19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3CF9EB42ACD95F700CA8E19 /* IMAWO_Nexus_AI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IMAWO_Nexus_AI.xcdatamodel; sourceTree = "<group>"; };
+		E3CF9EB62ACD95F700CA8E19 /* IMAWO_Nexus_AI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IMAWO_Nexus_AI.entitlements; sourceTree = "<group>"; };
+		E3CF9EB72ACD95F700CA8E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3CF9ECB2ACD972800CA8E19 /* ApiKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeysView.swift; sourceTree = "<group>"; };
+		E3CF9ECE2ACD9A0D00CA8E19 /* Whisper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whisper.swift; sourceTree = "<group>"; };
+		E3CF9ED32ACD9BFE00CA8E19 /* ApiKeys+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiKeys+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E3CF9ED42ACD9BFE00CA8E19 /* ApiKeys+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiKeys+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E3D905912AD3DA8D00F20C0A /* AnalyzedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzedTextView.swift; sourceTree = "<group>"; };
+		FBBDF20FAEBFD07EDB72281C /* Pods_IMAWO_Nexus_AI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMAWO_Nexus_AI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3CF9EA22ACD95F500CA8E19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA51970C5819634E500BB836 /* Pods_IMAWO_Nexus_AI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FAB8106D2A74F87786A8004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBBDF20FAEBFD07EDB72281C /* Pods_IMAWO_Nexus_AI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A941F8BE2C258B85003BC719 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A9FDC0F62C257BBA00A87ED5 /* FileImportSection.swift */,
+				A9FDC0F82C257BD600A87ED5 /* FilePlaybackSection.swift */,
+				A9FDC0FA2C257BF800A87ED5 /* TranscriptionSection.swift */,
+				A941F8BA2C2587E7003BC719 /* AnalysisSection.swift */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		A941F8BF2C258BB3003BC719 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A9FDC0EE2C25768500A87ED5 /* SideBarView.swift */,
+				A9FDC0F02C25771F00A87ED5 /* DetailView.swift */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		A941F8C02C258BCE003BC719 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A941F8BC2C25891B003BC719 /* AnimationsView.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		A941F8C22C258BE7003BC719 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF9EAA2ACD95F500CA8E19 /* ContentView.swift */,
+				E3CF9ECB2ACD972800CA8E19 /* ApiKeysView.swift */,
+				E3D905912AD3DA8D00F20C0A /* AnalyzedTextView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A9702A732C23183200C74652 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A9702A742C23183D00C74652 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E35083082AD98B7800001805 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A9702A732C23183200C74652 /* Network */,
+				E35083092AD98B8300001805 /* Helpers */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E35083092AD98B8300001805 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E350830A2AD98B9700001805 /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E372A6CE2AD945D00032705E /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				E372A6CF2AD945DA0032705E /* Tips.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		E3CF9E9C2ACD95F500CA8E19 = {
+			isa = PBXGroup;
+			children = (
+				E3CF9EA72ACD95F500CA8E19 /* IMAWO Nexus AI */,
+				E3CF9EA62ACD95F500CA8E19 /* Products */,
+				F4A464AFDC8F29AD3511D447 /* Pods */,
+				5FAB8106D2A74F87786A8004 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E3CF9EA62ACD95F500CA8E19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF9EA52ACD95F500CA8E19 /* IMAWO Nexus AI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3CF9EA72ACD95F500CA8E19 /* IMAWO Nexus AI */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF9EBD2ACD960200CA8E19 /* Domain */,
+				E35083082AD98B7800001805 /* Application */,
+				E3CF9EBE2ACD960700CA8E19 /* Presentation */,
+				E3CF9EA82ACD95F500CA8E19 /* IMAWO_Nexus_AIApp.swift */,
+				E3CF9EAC2ACD95F700CA8E19 /* Assets.xcassets */,
+				E3CF9EB62ACD95F700CA8E19 /* IMAWO_Nexus_AI.entitlements */,
+				E3CF9EB72ACD95F700CA8E19 /* Info.plist */,
+				E3CF9EAE2ACD95F700CA8E19 /* Preview Content */,
+			);
+			path = "IMAWO Nexus AI";
+			sourceTree = "<group>";
+		};
+		E3CF9EAE2ACD95F700CA8E19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF9EAF2ACD95F700CA8E19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3CF9EBD2ACD960200CA8E19 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF9ECD2ACD99FA00CA8E19 /* Models */,
+				E3CF9EC52ACD968700CA8E19 /* CoreData */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E3CF9EBE2ACD960700CA8E19 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E372A6CE2AD945D00032705E /* Tips */,
+				E3CF9EC02ACD961900CA8E19 /* Views */,
+				E3CF9EBF2ACD961300CA8E19 /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E3CF9EBF2ACD961300CA8E19 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E31BC0392ADFB0770055F065 /* OpenAIViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E3CF9EC02ACD961900CA8E19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A941F8C22C258BE7003BC719 /* Core */,
+				A941F8C02C258BCE003BC719 /* Animations */,
+				A941F8BF2C258BB3003BC719 /* iPad */,
+				A941F8BE2C258B85003BC719 /* iPhone */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3CF9EC42ACD967F00CA8E19 /* EntitiesExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF9ED32ACD9BFE00CA8E19 /* ApiKeys+CoreDataClass.swift */,
+				E3CF9ED42ACD9BFE00CA8E19 /* ApiKeys+CoreDataProperties.swift */,
+			);
+			path = EntitiesExtensions;
+			sourceTree = "<group>";
+		};
+		E3CF9EC52ACD968700CA8E19 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF9ED02ACD9B7A00CA8E19 /* DataModel */,
+				E3CF9ED22ACD9B8B00CA8E19 /* PersistenceController */,
+				E3CF9EC42ACD967F00CA8E19 /* EntitiesExtensions */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E3CF9ECD2ACD99FA00CA8E19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3499BA32AD8069A00D26BC2 /* AnalyzedTextCache.swift */,
+				E3CF9ECE2ACD9A0D00CA8E19 /* Whisper.swift */,
+				E37F98422AD0188900618AEF /* APIResponse.swift */,
+				E3499BA02AD8003800D26BC2 /* Response.swift */,
+				A9702A712C23172000C74652 /* OpenAIError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3CF9ED02ACD9B7A00CA8E19 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF9EB32ACD95F700CA8E19 /* IMAWO_Nexus_AI.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		E3CF9ED22ACD9B8B00CA8E19 /* PersistenceController */ = {
+			isa = PBXGroup;
+			children = (
+				E36BCEB42ACE790A00762025 /* PersistenceController.swift */,
+			);
+			path = PersistenceController;
+			sourceTree = "<group>";
+		};
+		F4A464AFDC8F29AD3511D447 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEB47A6FFA9822B5BB8D852B /* Pods-IMAWO Nexus AI.debug.xcconfig */,
+				60EB3C177628C58897F1F1DF /* Pods-IMAWO Nexus AI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3CF9EA42ACD95F500CA8E19 /* IMAWO Nexus AI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3CF9EBA2ACD95F700CA8E19 /* Build configuration list for PBXNativeTarget "IMAWO Nexus AI" */;
+			buildPhases = (
+				7F91BCF3501AA79A9B44AA7C /* [CP] Check Pods Manifest.lock */,
+				E3CF9EA12ACD95F500CA8E19 /* Sources */,
+				E3CF9EA22ACD95F500CA8E19 /* Frameworks */,
+				E3CF9EA32ACD95F500CA8E19 /* Resources */,
+				537EDF4B8BCA9E04311958CD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IMAWO Nexus AI";
+			productName = "IMAWO Nexus AI";
+			productReference = E3CF9EA52ACD95F500CA8E19 /* IMAWO Nexus AI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3CF9E9D2ACD95F500CA8E19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E3CF9EA42ACD95F500CA8E19 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E3CF9EA02ACD95F500CA8E19 /* Build configuration list for PBXProject "IMAWO Nexus AI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3CF9E9C2ACD95F500CA8E19;
+			productRefGroup = E3CF9EA62ACD95F500CA8E19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3CF9EA42ACD95F500CA8E19 /* IMAWO Nexus AI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3CF9EA32ACD95F500CA8E19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3CF9EB02ACD95F700CA8E19 /* Preview Assets.xcassets in Resources */,
+				E3CF9EAD2ACD95F700CA8E19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		537EDF4B8BCA9E04311958CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMAWO Nexus AI/Pods-IMAWO Nexus AI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMAWO Nexus AI/Pods-IMAWO Nexus AI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IMAWO Nexus AI/Pods-IMAWO Nexus AI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F91BCF3501AA79A9B44AA7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMAWO Nexus AI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3CF9EA12ACD95F500CA8E19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9702A752C23183D00C74652 /* APIService.swift in Sources */,
+				E3CF9ECF2ACD9A0D00CA8E19 /* Whisper.swift in Sources */,
+				E3CF9EAB2ACD95F500CA8E19 /* ContentView.swift in Sources */,
+				A9FDC0EF2C25768500A87ED5 /* SideBarView.swift in Sources */,
+				A9702A722C23172000C74652 /* OpenAIError.swift in Sources */,
+				E3D905922AD3DA8D00F20C0A /* AnalyzedTextView.swift in Sources */,
+				A9FDC0FB2C257BF800A87ED5 /* TranscriptionSection.swift in Sources */,
+				E3CF9EA92ACD95F500CA8E19 /* IMAWO_Nexus_AIApp.swift in Sources */,
+				E3CF9ED52ACD9BFE00CA8E19 /* ApiKeys+CoreDataClass.swift in Sources */,
+				A941F8BB2C2587E7003BC719 /* AnalysisSection.swift in Sources */,
+				A941F8BD2C25891B003BC719 /* AnimationsView.swift in Sources */,
+				E37F98432AD0188900618AEF /* APIResponse.swift in Sources */,
+				E350830B2AD98B9700001805 /* Utilities.swift in Sources */,
+				A9FDC0F92C257BD600A87ED5 /* FilePlaybackSection.swift in Sources */,
+				A9FDC0F72C257BBA00A87ED5 /* FileImportSection.swift in Sources */,
+				E3499BA12AD8003800D26BC2 /* Response.swift in Sources */,
+				E31BC03A2ADFB0770055F065 /* OpenAIViewModel.swift in Sources */,
+				E3499BA42AD8069A00D26BC2 /* AnalyzedTextCache.swift in Sources */,
+				E36BCEB52ACE790A00762025 /* PersistenceController.swift in Sources */,
+				E3CF9ED62ACD9BFE00CA8E19 /* ApiKeys+CoreDataProperties.swift in Sources */,
+				E3CF9EB52ACD95F700CA8E19 /* IMAWO_Nexus_AI.xcdatamodeld in Sources */,
+				A9FDC0F12C25771F00A87ED5 /* DetailView.swift in Sources */,
+				E372A6D02AD945DA0032705E /* Tips.swift in Sources */,
+				E3CF9ECC2ACD972800CA8E19 /* ApiKeysView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E3CF9EB82ACD95F700CA8E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3CF9EB92ACD95F700CA8E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3CF9EBB2ACD95F700CA8E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB47A6FFA9822B5BB8D852B /* Pods-IMAWO Nexus AI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "IMAWO Nexus AI/IMAWO_Nexus_AI.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_ASSET_PATHS = "\"IMAWO Nexus AI/Preview Content\"";
+				DEVELOPMENT_TEAM = 83532998Y4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IMAWO Nexus AI/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.10;
+				PRODUCT_BUNDLE_IDENTIFIER = imawo.nexus.ai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3CF9EBC2ACD95F700CA8E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60EB3C177628C58897F1F1DF /* Pods-IMAWO Nexus AI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "IMAWO Nexus AI/IMAWO_Nexus_AI.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_ASSET_PATHS = "\"IMAWO Nexus AI/Preview Content\"";
+				DEVELOPMENT_TEAM = 83532998Y4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IMAWO Nexus AI/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.10;
+				PRODUCT_BUNDLE_IDENTIFIER = imawo.nexus.ai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3CF9EA02ACD95F500CA8E19 /* Build configuration list for PBXProject "IMAWO Nexus AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3CF9EB82ACD95F700CA8E19 /* Debug */,
+				E3CF9EB92ACD95F700CA8E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3CF9EBA2ACD95F700CA8E19 /* Build configuration list for PBXNativeTarget "IMAWO Nexus AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3CF9EBB2ACD95F700CA8E19 /* Debug */,
+				E3CF9EBC2ACD95F700CA8E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E3CF9EB32ACD95F700CA8E19 /* IMAWO_Nexus_AI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E3CF9EB42ACD95F700CA8E19 /* IMAWO_Nexus_AI.xcdatamodel */,
+			);
+			currentVersion = E3CF9EB42ACD95F700CA8E19 /* IMAWO_Nexus_AI.xcdatamodel */;
+			path = IMAWO_Nexus_AI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E3CF9E9D2ACD95F500CA8E19 /* Project object */;
+}
